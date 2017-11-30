@@ -14,4 +14,9 @@ class Version extends Model
     {
     	return $this->belongsTo('App\Marca','au_marca','mar_codigo');
     }
+
+    public function autos()
+    {
+  		return $this->hasMany('App\Auto' , 'sa_auto','au_codigo');
+  	}
 }

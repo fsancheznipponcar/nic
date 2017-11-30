@@ -14,4 +14,9 @@ class Marca extends Model
     {
   		return $this->hasMany('App\Version' , 'au_marca','mar_codigo');
   	}
+
+    public function autos()
+    {
+  		return $this->hasMany('App\Auto' , 'sa_marca','mar_codigo');
+  	}
 }

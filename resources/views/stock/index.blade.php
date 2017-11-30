@@ -1,4 +1,4 @@
 @extends('layout.master')
 @section('cuerpo')
-Listado de Stock
+Listado de stock
 @stop
