@@ -8,6 +8,6 @@ class StockController extends Controller
 {
     public function index()
     {
-    	return "Aca esta el stock";
+    	return view('stock.index');
     }
 }
