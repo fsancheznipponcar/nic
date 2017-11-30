@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Listado de Vendedores
+Route::get('stock','StockController@index');
