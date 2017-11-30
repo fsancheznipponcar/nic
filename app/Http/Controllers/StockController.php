@@ -9,7 +9,7 @@ class StockController extends Controller
 {
     public function index()
     {
-    	$autos = Auto::all();
+    	$autos = Auto::paginate(10);
     	return view('stock.index', compact('autos'));
     }
 }

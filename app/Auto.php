@@ -16,6 +16,6 @@ class Auto extends Model
 
     public function version()
     {
-    	return $this->belongsTo('App\Marca','sa_auto','au_codigo');
+    	return $this->belongsTo('App\Version','sa_auto','au_codigo');
     }
 }
